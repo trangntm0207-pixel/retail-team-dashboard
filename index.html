@@ -46,7 +46,7 @@ $('file').addEventListener('change',async e=>{let f=e.target.files[0];if(!f)retu
 weekOptions();render();
 
 // THAY URL BÊN DƯỚI bằng CSV của sheet APPROVED (không chứa dữ liệu cá nhân).
-const SHARED_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQO2evJwIsDJLn9sAFbC4NiIAesS8w6UwLhx6MFTNScp55iYpNq-MtOpA8JWOUM6vIMPh7z9Px8d9oe/pub?gid=1218990469&single=true&output=csv';
+const SHARED_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQO2evJwlsDJLn9sAFbC4NiIAesS8w6UwLhx6MFTNScp55iYpNq-MtOpA8JWOUM6vIMPh7z9Px8d9oe/pub?gid=1218990469&single=true&output=csv';
 async function refreshOnline(){
  const url = (SHARED_CSV_URL || localStorage.getItem('retail_csv_url') || '').trim();
  if(!url){$('syncStatus').textContent='Chưa có URL CSV';return}
